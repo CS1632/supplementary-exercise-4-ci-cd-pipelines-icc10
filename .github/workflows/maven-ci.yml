@@ -58,6 +58,7 @@ jobs:
     steps:
       - uses: actions/cache@v3
         with:
+          fetch-depth: 0
           key: cached-build-${{github.sha}}
           path: .
       - name: Set up JDK 17
